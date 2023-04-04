@@ -13,14 +13,19 @@ namespace GradeBook.GradeBooks
     public abstract class BaseGradeBook
     {
         public GradeBookType Type { get; set; }         //I'm not sure about that
-        public string Name { get; set; }
-        public List<Student> Students { get; set; }
-
-        public BaseGradeBook(string name)
+        
+        private bool isWeighted;
+        public BaseGradeBook(string name, bool isWeighted)
         {
             Name = name;
             Students = new List<Student>();
+            this.isWeighted = isWeighted;
         }
+        public string Name { get; set; }
+        public bool IsWeighted { get; set; }
+        public List<Student> Students { get; set; }
+
+ 
 
         public void AddStudent(Student student)
         {
@@ -122,6 +127,7 @@ namespace GradeBook.GradeBooks
                     return 0;
             }
             return 0;
+
         }
 
         public virtual void CalculateStatistics()

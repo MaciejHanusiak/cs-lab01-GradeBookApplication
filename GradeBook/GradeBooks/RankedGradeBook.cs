@@ -30,7 +30,7 @@ namespace GradeBook.GradeBooks
 
             base.CalculateStatistics();
         }
-        public RankedGradeBook(string name) : base(name)
+        public RankedGradeBook(string name, bool isWeighted) : base(name, isWeighted)
         {
             Type = GradeBookType.Ranked;
         }
