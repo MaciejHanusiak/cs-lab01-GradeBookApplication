@@ -9,7 +9,14 @@ using Newtonsoft.Json.Linq;
 
 namespace GradeBook.GradeBooks
 {
-    
+    public class StandardGradeBook : BaseGradeBook
+    {
+        public StandardGradeBook(string name) : base(name)
+        {
+            Type = GradeBookType.Standard;
+        }
+    }
+
     public class BaseGradeBook
     {
         public GradeBookType Type { get; set; }         //I'm not sure about that
