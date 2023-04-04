@@ -59,13 +59,13 @@ __Note:__ This isn't the only way to accomplish implementation, however; this is
 
 - [ ] Add support for Ranked Grading
 	- [ ] Creating The `GradeBookType` Enum.
-		- [ ] Create a new Enum `GradeBookType`.
+		- [x] Create a new Enum `GradeBookType`.
 			- This should be located in the `Enums` directory.
 			- This should use the `GradeBooks.Enums` namespace.
 			- This should use the `public` access modifier.
 			- This should contain the values `Standard`, `Ranked`, `ESNU`, `OneToFour`, and `SixPoint`.
 
-	- [ ] Add `Type` property
+	- [x] Add `Type` property
 		- [ ] Add a new property `Type` to `BaseGradeBook`
 			- This should use the name `Type`.
 			- This should be of type `GradeBookType`.
